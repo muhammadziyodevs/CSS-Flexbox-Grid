@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+section {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.flex-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Flexbox Styles */
+.flex-container {
+    display: flex;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+}
+
+/* Row Layout */
+.row {
+    flex-direction: row;
+}
+
+/* Column Layout */
+.column {
+    flex-direction: column;
+}
+
+/* Space Between */
+.space-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Space Around */
+.space-around {
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Centered */
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid Styles */
+section {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.grid-item {
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Basic Grid */
+.grid-container.basic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Grid with Gap */
+.grid-container.gap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Auto-fit Grid */
+.grid-container.auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+/* Grid Areas */
+.grid-container.areas {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.grid-item.header {
+    grid-area: header;
+    background-color: #4CAF50;
+}
+
+.grid-item.sidebar {
+    grid-area: sidebar;
+    background-color: #FF5722;
+}
+
+.grid-item.content {
+    grid-area: content;
+    background-color: #3F51B5;
+}
+
+.grid-item.footer {
+    grid-area: footer;
+    background-color: #795548;
+}
